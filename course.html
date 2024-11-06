@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduFord - Course</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar: Logo and Nav-Links -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times myicon" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars myicon" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- course page content -->
+
+    <!-- courses -->
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Explore a variety of courses designed to boost your skills and open new
+        career paths, guided by expert instructors.
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Build a strong foundation with our intermediate courses, designed to
+            give you essential knowledge and skills in key subjects.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Pursue a degree to deepen your expertise and gain in-depth knowledge
+            in your chosen field, preparing you for a successful career.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Advance your learning with our postgraduate programs, focused on
+            specialized skills and advanced concepts for career growth.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fcailities -->
+    <section class="facilities">
+      <h1>Our Facilites</h1>
+      <p>
+        We provide state-of-the-art facilities to support student growth and
+        learning, including advanced labs, comfortable study spaces,
+        well-stocked libraries, and recreational areas. Our goal is to create an
+        environment that inspires excellence and fosters innovation.
+      </p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/library.png" alt="" />
+          <h3>World Class Library</h3>
+          <p>
+            Our library boasts a vast collection of books, journals, and digital
+            resources, providing students with a quiet place to study and access
+            to invaluable knowledge.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/basketball.png" alt="" />
+          <h3>Largest Playground</h3>
+          <p>
+            Enjoy our expansive playground, equipped with various sports
+            facilities, perfect for physical activities, games, and
+            team-building events.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/cafeteria.png" alt="" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>
+            Our cafeteria offers a diverse menu with nutritious and delicious
+            meals, ensuring that students can fuel their bodies for a productive
+            day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are dedicated to providing high-quality education and empowering
+        students to achieve their dreams.<br />
+        Our commitment to excellence and innovation sets us apart as a leader in
+        the academic community.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook footericon"></i>
+        <i class="fa-brands fa-twitter footericon"></i>
+        <i class="fa-brands fa-square-instagram footericon"></i>
+        <i class="fa-brands fa-linkedin footericon"></i>
+      </div>
+      <p>
+        Made with <i class="fa-regular fa-heart footericon"></i> by Supratim
+        Maity
+      </p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

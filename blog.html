@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduFord - Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar: Logo and Nav-Links -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times myicon" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars myicon" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificates & Online programs for 2024</h1>
+    </section>
+
+    <!-- Blog page content -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Transform Your Future with Our 2024 Certificates & Online Programs</h2>
+                <p>Our 2024 online programs are designed to equip you with the skills and knowledge needed to thrive in today’s fast-paced world. Whether you're looking to advance in your current field or explore a new career path, our courses offer hands-on training led by industry experts. Each program is carefully curated to meet the demands of the job market and includes practical projects to ensure you gain real-world experience.</p>
+                <br>
+                <p>We believe in the power of flexible learning, and our online programs give you the freedom to learn at your own pace, from anywhere in the world. With a variety of certifications available in areas such as technology, business, health, and the arts, you can choose a program that aligns with your career goals. All our programs are supported by a network of mentors and provide valuable resources to enhance your learning journey.</p>
+                <br>
+                <p>Upon completion of your chosen program, you’ll receive a recognized certificate that showcases your dedication and skill. Our certificates are trusted by employers globally and demonstrate your commitment to professional growth. Join thousands of learners worldwide who have transformed their careers and expanded their opportunities with our programs. Start your journey with us and unlock your potential today.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>Explore Our Diverse Learning Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Cybersecurity</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Cloud Computing</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Digital Marketing</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Financial Technology</span>
+                    <span>14</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>27</span>
+                </div>
+                <div>
+                    <span>Project Management</span>
+                    <span>17</span>
+                </div>
+                <div>
+                    <span>Software Development</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Web Development</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Graphic Design</span>
+                    <span>19</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are dedicated to providing high-quality education and empowering
+        students to achieve their dreams.<br />
+        Our commitment to excellence and innovation sets us apart as a leader in
+        the academic community.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook footericon"></i>
+        <i class="fa-brands fa-twitter footericon"></i>
+        <i class="fa-brands fa-square-instagram footericon"></i>
+        <i class="fa-brands fa-linkedin footericon"></i>
+      </div>
+      <p>
+        Made with <i class="fa-regular fa-heart footericon"></i> by Supratim
+        Maity
+      </p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
